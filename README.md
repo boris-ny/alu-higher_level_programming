@@ -1,2 +1,3 @@
-# alu-higher_level_programming
-ALU repo for Python, SQL and related exercises
+# ALU-higher_level_programming
+
+This directory is for loops and functions 🤗
