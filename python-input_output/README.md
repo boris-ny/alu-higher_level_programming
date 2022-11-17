@@ -10,7 +10,9 @@
 * Your code should use the pycodestyle (version 2.7.*)
 * All your files must be executable
 * The length of your files will be tested using wc
+
 ## Python Test Cases
+
 * Allowed editors: vi, vim, emacs
 * All your files should end with a new line
 * All your test files should be inside a folder tests
