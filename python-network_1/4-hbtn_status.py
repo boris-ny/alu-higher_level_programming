@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 '''Module 4-hbtn_status.py'''
-import urllib.request
+import requests
 if __name__ == "__main__":
-    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
-        html = response.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(html)))
-        print("\t- content: {}".format(html))
+   r = requests.get("https://intranet.hbtn.io/status")
+   print("Body response:")
+   print("\t- type: {}".format(type(r.text)))
+   print("\t- content: {}".format(r.text))
