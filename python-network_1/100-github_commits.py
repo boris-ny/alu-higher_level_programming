@@ -7,9 +7,9 @@ if __name__ == "__main__":
                                                              sys.argv[1])
     response = requests.get(url)
     try:
+        json = response.json()
         for i in range(10):
-            print("{}: {}".format(response.json()[i].get('sha'),
-                                  response.json()[i].get('commit').get(
-                                      'author').get('name')))
+            print("{}: {}".format(json[i].get('sha'),
+                                  json[i].get('commit').get('author').get('name')))
     except:
         pass
