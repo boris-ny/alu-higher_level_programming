@@ -1,7 +1,7 @@
 # SQL - Introduction
 
-
 ## Resources
+
 Read or watch:
 
 - [What is Database & SQL?](https://alu-intranet.hbtn.io/rltoken/jRAhwW4u4YvZtLtMGU2_6g)
@@ -14,10 +14,8 @@ Read or watch:
 - [MySQL Cheat Sheet](https://alu-intranet.hbtn.io/rltoken/mNcGgvhZNG0dbFe23E-EjA)
 - [MySQL 8.0 SQL Statement Syntax](https://alu-intranet.hbtn.io/rltoken/ePNUeloWxfiXwec7HeKe7Q)
 
+### General learning objectives
 
-
-
-### General learning objectives 
 - What’s a database
 - What’s a relational database
 - What does `SQL` stand for
