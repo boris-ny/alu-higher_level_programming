@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-'''Module with a function for dividing all elementsof a matrix'''
+'''
+Module with a function for dividing all elementsof a matrix
+'''
+
+
 def matrix_divided(matrix, div):
-    '''Function that divides all elements of a matrix'''
+    '''
+    Function that divides all elements of a matrix by a div 
+    '''
     if type(matrix) is not list:
         raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
     if type(div) is not int and type(div) is not float:
