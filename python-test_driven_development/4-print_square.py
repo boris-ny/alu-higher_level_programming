@@ -2,6 +2,7 @@
 
 '''Module for print_square function'''
 
+
 def print_square(size):
     '''Function that prints a square with the character #'''
     if type(size) is not int:
