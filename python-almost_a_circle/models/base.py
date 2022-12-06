@@ -4,10 +4,13 @@
 
 import json
 
+
 class Base:
     '''
     Class Base Attributes: id number
     '''
+
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -22,6 +25,7 @@ class Base:
         '''
         Returns the JSON string of list_dictionaries
         '''
+
 
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
