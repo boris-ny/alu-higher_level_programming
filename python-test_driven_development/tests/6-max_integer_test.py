@@ -11,7 +11,7 @@ class TestMaxInteger(unittest.TestCase):
     """"Function documentation"""
 
     def test_simple_case(self):
-        """"Function documentation"""
+        """"Function for testing simple case"""
         self.assertEqual(max_integer([1, 2, 3]), 3)
 
     def test_negative_case(self):
