@@ -19,7 +19,7 @@ class Rectangle(Base):
     def width(self):
         """Getter for width"""
     
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -28,7 +28,7 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -74,7 +74,7 @@ class Rectangle(Base):
 
     def area(self):
         """Returns the area of the rectangle"""
-        return self.width * self.__height
+        return self.__width * self.__height
 
     def display(self):
         """Prints the rectangle with the character #"""
@@ -83,21 +83,21 @@ class Rectangle(Base):
         for i in range(self.__height):
             for j in range(self.__x):
                 print(" ", end="")
-            for j in range(self.width):
+            for j in range(self.__width):
                 print("#", end="")
             print()
 
     def __str__(self):
         """Returns the string representation of the rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
-            self.id, self.__x, self.__y, self.width, self.__height)
+            self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """Updates the attributes of the rectangle"""
         if len(args) != 0:
             try:
                 self.id = args[0]
-                self.width = args[1]
+                self.__width = args[1]
                 self.__height = args[2]
                 self.__x = args[3]
                 self.__y = args[4]
@@ -105,7 +105,7 @@ class Rectangle(Base):
                 pass
         elif len(kwargs) != 0:
             self.id = kwargs["id"] if "id" in kwargs else self.id
-            self.width = kwargs["width"] if "width" in kwargs else self.width
+            self.__width = kwargs["width"] if "width" in kwargs else self.__width
             self.__height = kwargs["height"] if "height" in kwargs else self.__height
             self.__x = kwargs["x"] if "x" in kwargs else self.__x
             self.__y = kwargs["y"] if "y" in kwargs else self.__y
@@ -114,7 +114,7 @@ class Rectangle(Base):
         """Returns the representation of the rectangle"""
         return {
             "id": self.id,
-            "width": self.width,
+            "width": self.__width,
             "height": self.__height,
             "x": self.__x,
             "y": self.__y
