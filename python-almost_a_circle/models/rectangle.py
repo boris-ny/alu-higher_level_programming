@@ -18,7 +18,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """Getter for width"""
-    
+
         return self.__width
 
     @width.setter
@@ -105,8 +105,10 @@ class Rectangle(Base):
                 pass
         elif len(kwargs) != 0:
             self.id = kwargs["id"] if "id" in kwargs else self.id
-            self.__width = kwargs["width"] if "width" in kwargs else self.__width
-            self.__height = kwargs["height"] if "height" in kwargs else self.__height
+            self.__width = kwargs["width"] if "width" in kwargs else \
+                self.__width
+            self.__height = kwargs["height"] if "height" in kwargs else \
+                self.__height
             self.__x = kwargs["x"] if "x" in kwargs else self.__x
             self.__y = kwargs["y"] if "y" in kwargs else self.__y
 
