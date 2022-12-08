@@ -28,7 +28,7 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "height must be > 0"):
             r12 = Rectangle(1, 0)
 
-         with self.assertRaisesRegex(ValueError, "width must be > 0"):
+        with self.assertRaisesRegex(ValueError, "width must be > 0"):
             r9 = Rectangle(-1, 2)
 
         with self.assertRaisesRegex(ValueError, "height must be > 0"):
@@ -52,7 +52,7 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             r7 = Rectangle(1, 2, 3, "4")
 
-     def test_display(self):
+    def test_display(self):
         """Test for the display"""
         rect1 = Rectangle(4, 2)
         rect2 = Rectangle(4, 2, 3)
