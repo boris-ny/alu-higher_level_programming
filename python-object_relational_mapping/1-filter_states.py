@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     ora = db_get.cursor()
     ora.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
-    
+
     for row in ora.fetchall():
         if row[1][0] == 'N':
             print(row)
