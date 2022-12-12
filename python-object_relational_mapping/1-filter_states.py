@@ -13,7 +13,7 @@ if __name__ == "__main__":
         db=argv[3])
 
     ora = db_get.cursor()
-    ora.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    ora.execute("SELECT * FROM states WHERE name LIKE '{}' ORDER BY id ASC")
     for row in ora.fetchall():
         print(row)
     ora.close()
