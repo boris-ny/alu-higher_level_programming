@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A script that takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument."""
+""" A script that takes in an argument and displays all values in the states table."""
 
 import MySQLdb
 from sys import argv
@@ -16,6 +16,7 @@ if __name__ == "__main__":
     ora.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4],))
 
     for row in ora.fetchall():
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
     ora.close()
     db_get.close()
