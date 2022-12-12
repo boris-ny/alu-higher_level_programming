@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" A script that takes in an argument and displays all values in the states table."""
+""" A script that takes in an argument and displays all values in the \
+    states table."""
 
 import MySQLdb
 from sys import argv
