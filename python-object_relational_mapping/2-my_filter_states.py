@@ -13,7 +13,8 @@ if __name__ == "__main__":
         db=argv[3])
 
     ora = db_get.cursor()
-    ora.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4],))
+    ora.execute("SELECT * FROM states WHERE name = '{}' ORDER BY \
+        id ASC".format(argv[4],))
 
     for row in ora.fetchall():
         if row[1] == argv[4]:
