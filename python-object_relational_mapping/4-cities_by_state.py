@@ -18,7 +18,7 @@ if __name__ == "__main__":
     ora = db_get.cursor()
     ora.execute("SELECT cities.id, cities.name, states.name FROM cities \
     JOIN states ON cities.state_id = states.id ORDER BY cities.id")
-    
+
     for row in ora.fetchall():
         print(row)
     ora.close()
