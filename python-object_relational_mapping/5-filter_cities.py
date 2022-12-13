@@ -17,7 +17,8 @@ if __name__ == "__main__":
     ora = db_get.cursor()
     ora.execute("SELECT cities.name \
         FROM cities INNER JOIN states \
-            ON cities.state_id = states.id WHERE states.name = %s ORDER BY cities.id ASC", (argv[4],))
+            ON cities.state_id = states.id \
+                WHERE states.name = %s ORDER BY cities.id ASC", (argv[4],))
 
     cites = []
     for row in ora.fetchall():
