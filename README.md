@@ -1,7 +1,7 @@
 # **Alu-Higher_Level_Programming**
 
 >## **ALU repo for Python, SQL and related exercises 🐍**
-
+>
 >- [**python-hello_world**](python-hello_world)
 >- [**python-if_else_loops_functions**](python-if_else_loops_functions)
 >- [**python-import_modules**](python-import_modules)
@@ -18,3 +18,5 @@
 >- [**python-inheritance**](python-inheritance)
 >- [**python-everything_is_object**](python-everything_is_object)
 >- [**python-more_classes**](python-more_classes)
+>- [**python-test_driven_development**](python-test_driven_development)
+>- [**python-object_relational_mapping**](python-object_relational_mapping)
