@@ -33,7 +33,7 @@ For the moment, and for learning all basic concepts of this language, we will do
 
 At the end of this project, you are expected to be able to [explain to anyone,](https://intranet.aluswe.com/rltoken/7IvdhdUBt8B_PxSqLjfz9A) without the help of Google:
 
-### General:
+### General
 
 * Why JavaScript programming is amazing
 * How to run a JavaScript script
@@ -54,7 +54,7 @@ At the end of this project, you are expected to be able to [explain to anyone,](
 
 ## Requirements
 
-### General
+### general
 
 * Allowed editors: `vi`, `vim`, `emacs`
 * All your files will be interpreted on Ubuntu 20.04 LTS using `node` (version 14.x.x)
