@@ -2,7 +2,7 @@
 
 ## Resources
 
-## Read or watch:
+## Read or watch
 
 * [JavaScript objects basics](https://intranet.aluswe.com/rltoken/J3Z4yAus4UpxNtckHugmKQ)
 * [Object-oriented JavaScript](https://intranet.aluswe.com/rltoken/Th0A8D0mEExeE9qo1XFFow)
