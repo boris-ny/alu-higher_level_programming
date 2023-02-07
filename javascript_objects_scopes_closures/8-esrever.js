@@ -6,4 +6,4 @@ const esrever = function (list) {
   }
   return reversed;
 };
-exports.esrever
+exports.esrever = esrever;
