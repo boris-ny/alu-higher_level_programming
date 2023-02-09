@@ -1,7 +1,18 @@
 #!/usr/bin/node
-const request = require('request');
+const req = require('request');
 const url = process.argv[2];
-request.get(url, (error, body) => {
-    if (error) console.log(error); 
-    console.log(JSON.parse(body).results.filter(e1 =>.e1.characters.find(character => character.includes('18'))).length);
+
+let count = 0;
+let data;
+req.get(url, (err, res) => {
+  if (err) console.log(err);
+  else {
+    data = JSON.parse(res.body).results;
+    data.forEach((obj) => {
+      obj.characters.forEach((character) => {
+        if (character.includes('/18/')) count++;
+      });
+    });
+  }
+  console.log(count);
 });
